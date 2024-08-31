@@ -1,0 +1,37 @@
+1、数据说明
+数据以“,”分割
+
+1列：设备的唯一ID
+2列：设备所属虚拟中心ID
+3列：虚拟设备ID
+4列：指标名称
+5列：指标TAG，可能为空，如磁盘 tag d
+6列：采集值
+7列：采集时间
+8列：采集日期
+2400|22|vm-100|cpu.usage.average|\N|270.0|2018-10-31 00:00:20|2018-10-31
+
+2、指标说明
+
+net.droppedTx.summation	    网络传输丢包
+net.packetsTx.summation	    网络传输
+virtualDisk.numberReadAveraged.average	*  磁盘每秒读请求数
+virtualDisk.numberWriteAveraged.average	*  磁盘每秒写请求数
+virtualDisk.write.average	虚拟磁盘写入数据速度 KBps
+disk.usage.none	汇总的磁盘IO速度KBps
+virtualDisk.read.average 虚拟磁盘读取数据速度 KBps
+disk.usage.average	     汇总的磁盘IO速度KBps
+datastore.maxTotalLatency.latest	数据存储中最长的滞后时间
+cpu.usage.average				 CPU使用率（除 100 是使用率）
+mem.usage.average				 内存利用率（除 100 是使用率）
+net.usage.average	*      网络利用率（该时间内网络利用率包含传输和接收总速度）
+net.packetsRx.summation	 网络接收到的数据包（该时间内的收到数据包数）
+net.droppedRx.summation	 网络接收丢包数
+net.bytesRx.average	     网络接收速度 单位KBps
+net.bytesTx.average			 网络传输速度 单位KBps
+
+
+
+aaa  处理物品的总个数
+bbb  出现异常的个数
+ccc  当前温度
